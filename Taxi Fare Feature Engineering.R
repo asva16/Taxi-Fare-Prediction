@@ -34,7 +34,7 @@ origin_test = paste(taxi$pickup_latitude[1],taxi$pickup_longitude[1], sep = ',')
 destination_test = paste(taxi$dropoff_latitude[1],taxi$dropoff_longitude[1], sep = ',')
 driving_test = gmapsdistance::gmapsdistance(origin_test, 
                              destination_test, 
-                             key = 'AIzaSyA1MgLuZuyqR_OGY3ob3M52N46TDBRI_9k')
+                             key = 'api_key')
 driving_test$Distance
 taxi$distance[1]
 
